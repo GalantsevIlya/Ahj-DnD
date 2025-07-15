@@ -75,6 +75,8 @@ export default class DragandDrop {
         currentUL.append(this.clone);
         return;
       }
+
+      document.body.style.cursor = "grabbing";
     }
 
     const target = belowElement.closest(".cards__item");
@@ -114,5 +116,6 @@ export default class DragandDrop {
 
     document.removeEventListener("mousemove", this.onMouseMoveHandler);
     document.removeEventListener("mouseup", this.onMouseUpHandler);
+    document.body.style.cursor = "";
   }
 }
