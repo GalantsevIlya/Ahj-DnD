@@ -324,6 +324,7 @@ class DragandDrop {
         currentUL.append(this.clone);
         return;
       }
+      document.body.style.cursor = "grabbing";
     }
     const target = belowElement.closest(".cards__item");
     if (target) {
@@ -353,6 +354,7 @@ class DragandDrop {
     this.mouseY = null;
     document.removeEventListener("mousemove", this.onMouseMoveHandler);
     document.removeEventListener("mouseup", this.onMouseUpHandler);
+    document.body.style.cursor = "";
   }
 }
 ;// ./src/js/App.js
