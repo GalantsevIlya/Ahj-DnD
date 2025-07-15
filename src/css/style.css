@@ -15,6 +15,10 @@ a {
   text-decoration: none;
 }
 
+.cards__item {
+  cursor: grab;
+}
+
 button,
 div {
   -webkit-tap-highlight-color: transparent;

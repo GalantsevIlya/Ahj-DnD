@@ -27,8 +27,7 @@
 .cards__item_dragged {
   position: absolute;
   z-index: 999;
-  pointer-events: none;
-  cursor: grab;
+  cursor: grabbing;
 }
 
 .remove-btn {
